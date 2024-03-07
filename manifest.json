@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "MetaGuard",
-  "description": "区块链反欺诈安全卫士",
+  "description": "区块链诈骗检测安全卫士",
   "version": "1.0.0",
   "browser_action": {
     "default_title": "MetaGuard",
