@@ -5,27 +5,46 @@
   "version": "1.0.0",
   "browser_action": {
     "default_title": "MetaGuard",
-    "default_icon": "assets/images/icon.png",
+    "default_icon": "img/icon.19b573f2.jpg",
     "default_popup": "popup.html"
   },
-  "permissions": ["notifications", "tabs", "http://*/*", "https://*/*", "storage",
-    "webRequest", "webRequestBlocking"],
+  "permissions": [
+    "notifications",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
   "background": {
-    "scripts": ["js/chunk-vendors.js", "js/background.js"]
+    "scripts": [
+      "js/chunk-vendors.js",
+      "js/background.js"
+    ]
   },
   "icons": {
-    "16": "assets/images/icon.png",
-    "48": "assets/images/icon.png",
-    "128": "assets/images/icon.png"
+    "16": "img/icon.19b573f2.jpg",
+    "48": "img/icon.19b573f2.jpg",
+    "128": "img/icon.19b573f2.jpg"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["js/chunk-vendors.js", "js/content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/chunk-vendors.js",
+        "js/content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": ["js/pages.js", "img/icon.19b573f2.png", "js/inject.js",
-  "assets/images/icon.png"]
+  "web_accessible_resources": [
+    "js/pages.js",
+    "img/icon.19b573f2.jpg",
+    "js/inject.js",
+    "img/icon.19b573f2.jpg"
+  ]
 }
