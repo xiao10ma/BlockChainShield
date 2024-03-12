@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "MetaGuard",
+  "name": "BlockChainShield",
   "description": "区块链诈骗检测安全卫士",
   "version": "1.0.0",
   "browser_action": {
-    "default_title": "MetaGuard",
+    "default_title": "BlockChainShield",
     "default_icon": "/img/icon.19b573f2.jpg",
     "default_popup": "popup.html"
   },
@@ -14,9 +14,9 @@
     "scripts": ["js/chunk-vendors.js", "js/background.js"]
   },
   "icons": {
-    "16": "assets/images/icon.png",
-    "48": "assets/images/icon.png",
-    "128": "assets/images/icon.png"
+    "16": "/img/icon.19b573f2.jpg",
+    "48": "/img/icon.19b573f2.jpg",
+    "128": "/img/icon.19b573f2.jpg"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "content_scripts": [
@@ -26,6 +26,6 @@
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": ["js/pages.js", "img/icon.19b573f2.jpg", "js/inject.js",
-  "assets/images/icon.png"]
+  "web_accessible_resources": ["js/pages.js", "img/icon.19b573f2.jpg", "js/inject.js"
+  ]
 }
